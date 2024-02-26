@@ -1,6 +1,6 @@
 package Model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Avion {
 
@@ -8,13 +8,13 @@ public class Avion {
     private String marca;
     private String modelo;
     private String matricula;
-    private Date fechaEntradaServicio;
+    private LocalDate fechaEntradaServicio;
 
     public Avion(){
 
     }
 
-    public Avion(int id, String marca, String modelo, String matricula, Date fechaEntradaServicio) {
+    public Avion(int id, String marca, String modelo, String matricula, LocalDate fechaEntradaServicio) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;
@@ -22,7 +22,7 @@ public class Avion {
         this.fechaEntradaServicio = fechaEntradaServicio;
     }
 
-    public Avion(String marca, String modelo, String matricula, Date fechaEntradaServicio) {
+    public Avion(String marca, String modelo, String matricula, LocalDate fechaEntradaServicio) {
         this.marca = marca;
         this.modelo = modelo;
         this.matricula = matricula;
@@ -61,11 +61,11 @@ public class Avion {
         this.matricula = matricula;
     }
 
-    public Date getFechaEntradaServicio() {
+    public LocalDate getFechaEntradaServicio() {
         return fechaEntradaServicio;
     }
 
-    public void setFechaEntradaServicio(Date fechaEntradaServicio) {
+    public void setFechaEntradaServicio(LocalDate fechaEntradaServicio) {
         this.fechaEntradaServicio = fechaEntradaServicio;
     }
 }

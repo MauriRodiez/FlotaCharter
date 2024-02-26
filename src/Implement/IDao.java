@@ -8,7 +8,7 @@ public interface IDao<T> {
     T registrar(T t);
 
     // Buscar un avio por ID
-    T buscar(T t);
+    T buscar(int id);
 
     // Eliminar un avion por ID
     void eliminar(int id);
