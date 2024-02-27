@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6c999cf-d28a-462e-be5b-7b146669f024" name="Changes" comment="" />
+    <list default="true" id="f6c999cf-d28a-462e-be5b-7b146669f024" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Implement/AvionDAOmemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/AvionServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlotaCharter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlotaCharter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlotaCharter.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/FlotaCharter.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlotaCharter.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/FlotaCharter.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/avisos.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/Conect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/Conect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Implement/AvionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Implement/AvionDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/AvionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/AvionService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,26 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mauricio/Documents/CV/JAVA/DH/Proyectos_Back/FlotaCharter&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/CTD/Proyect_Back/FlotaCharter/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AvionServiceTest.InsertarAvion.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mauricio/Documents/CV/JAVA/DH/Backend",
+    "onboarding.tips.debug.path": "D:/CTD/Proyect_Back/FlotaCharter/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mauricio\Documents\CV\JAVA\DH\Proyectos_Back\FlotaCharter\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AvionServiceTest.InsertarAvion">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="FlotaCharter" />
@@ -59,8 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AvionServiceTest.InsertarAvion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlotaCharter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.AvionServiceTest" />
+      <option name="METHOD_NAME" value="InsertarAvion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AvionServiceTest.InsertarAvion" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

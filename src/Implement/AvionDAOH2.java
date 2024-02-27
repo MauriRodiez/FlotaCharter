@@ -4,13 +4,12 @@ import DB.Conect;
 import Model.Avion;
 import org.apache.log4j.Logger;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AvionDAO implements IDao<Avion> {
+public class AvionDAOH2 implements IDao<Avion> {
 
     private static final String SQL_INSERT_AVION = "INSERT INTO AVIONES (MARCA, MODELO, MATRICULA, FECHA_DE_ENTRADA_EN_SERVICIO) " +
             "VALUES(?,?,?,?)";
@@ -18,7 +17,7 @@ public class AvionDAO implements IDao<Avion> {
     private static final String SQL_DELETE = "DELETE FROM AVIONES WHERE ID = ?";
     private static final String SQL_BUSCAR_TODOS = "SELECT * FROM AVIONES";
 
-    private static final Logger LOGGER = Logger.getLogger(AvionDAO.class);
+    private static final Logger LOGGER = Logger.getLogger(AvionDAOH2.class);
     //Conexion
     Connection connection = null;
 
@@ -124,6 +123,13 @@ public class AvionDAO implements IDao<Avion> {
                 String matricula = rsBuscar.getString("Matricula");
                 LocalDate fechaEnt = rsBuscar.getDate("FECHA_DE_ENTRADA_EN_SERVICIO").toLocalDate();
                 listadoAviones.add(new Avion(ident,marca,modelo,matricula,fechaEnt));
+                System.out.println(
+                        "ID: " + ident + "\n" +
+                                "Marca: " + marca + "\n" +
+                                "Modelo: " + modelo + "\n" +
+                                "Matricula: " + matricula + "\n" +
+                                "Fecha de entrada: " + fechaEnt
+                );
             }
 
             LOGGER.info("Hay cargados en la BD de aviones: " + listadoAviones.size() + " aviones");

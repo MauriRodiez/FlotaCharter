@@ -2,6 +2,7 @@ package DB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Conect {
@@ -31,6 +32,12 @@ public class Conect {
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 

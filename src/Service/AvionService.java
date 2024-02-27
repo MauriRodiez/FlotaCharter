@@ -1,6 +1,7 @@
 package Service;
 
-import Implement.AvionDAO;
+import Implement.AvionDAOH2;
+import Implement.AvionDAOmemory;
 import Implement.IDao;
 import Model.Avion;
 
@@ -11,7 +12,7 @@ public class AvionService {
     private IDao<Avion> avionIDao;
 
     public AvionService(){
-        this.avionIDao = new AvionDAO();
+        this.avionIDao = new AvionDAOH2();
     }
 
     // Insertar o registrar un avion
