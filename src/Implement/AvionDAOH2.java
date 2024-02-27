@@ -35,6 +35,11 @@ public class AvionDAOH2 implements IDao<Avion> {
 
             psInsert.execute();
 
+            // Esto es para traer el id
+            ResultSet resultSet = psInsert.getGeneratedKeys();
+            while(resultSet.next()){
+                avion.setId(resultSet.getInt(1));
+            }
             LOGGER.info("Se ha insertado un nuevo avion");
 
         } catch (Exception e) {
@@ -138,6 +143,6 @@ public class AvionDAOH2 implements IDao<Avion> {
             e.printStackTrace();
         }
 
-        return null;
+        return listadoAviones;
     }
 }
