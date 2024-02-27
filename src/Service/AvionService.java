@@ -4,6 +4,8 @@ import Implement.AvionDAO;
 import Implement.IDao;
 import Model.Avion;
 
+import java.util.List;
+
 public class AvionService {
 
     private IDao<Avion> avionIDao;
@@ -25,5 +27,10 @@ public class AvionService {
     // Eliminar registro
     public void eliminar(int id){
         avionIDao.eliminar(id);
+    }
+
+    // Buscar todos
+    public List<Avion> buscarTodos(){
+        return avionIDao.buscarTodos();
     }
 }
