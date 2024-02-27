@@ -1,4 +1,5 @@
 import DB.Conect;
+import Implement.AvionDAOH2;
 import Model.Avion;
 import Service.AvionService;
 
@@ -25,7 +26,7 @@ public class Main {
         avionService.registrar(charter5);
 
         avionService.buscarXID(1);
-        avionService.buscarTodos();
+        //avionService.buscarTodos();
         avionService.eliminar(2);
 
         avionService.buscarTodos();

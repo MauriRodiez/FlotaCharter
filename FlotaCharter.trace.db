@@ -7,8 +7,8 @@ Column "Fecha de entrada" not found [42122-214]
 	at org.h2.message.DbException.get(DbException.java:199)
 	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
 	at org.h2.jdbc.JdbcResultSet.getDate(JdbcResultSet.java:478)
-	at Implement.AvionDAO.buscar(AvionDAO.java:68)
-	at Implement.AvionDAO.buscar(AvionDAO.java:11)
+	at Implement.AvionDAOH2.buscar(AvionDAO.java:68)
+	at Implement.AvionDAOH2.buscar(AvionDAO.java:11)
 	at Service.AvionService.buscarXID(AvionService.java:22)
 	at Main.main(Main.java:19)
 2024-02-26 15:31:46 jdbc[5]: exception
@@ -20,8 +20,8 @@ Column "FECHA_DE_ENTRADA_EN_SERVICIa" not found [42122-214]
 	at org.h2.message.DbException.get(DbException.java:199)
 	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
 	at org.h2.jdbc.JdbcResultSet.getDate(JdbcResultSet.java:478)
-	at Implement.AvionDAO.buscar(AvionDAO.java:68)
-	at Implement.AvionDAO.buscar(AvionDAO.java:11)
+	at Implement.AvionDAOH2.buscar(AvionDAO.java:68)
+	at Implement.AvionDAOH2.buscar(AvionDAO.java:11)
 	at Service.AvionService.buscarXID(AvionService.java:22)
 	at Main.main(Main.java:19)
 2024-02-26 15:39:15 jdbc[5]: exception
