@@ -118,8 +118,15 @@ public class AvionDAO implements IDao<Avion> {
             ResultSet rsBuscar = psBuscarTodos.executeQuery();
 
             while (rsBuscar.next()){
-
+                int ident = rsBuscar.getInt("id");
+                String marca = rsBuscar.getNString("Marca");
+                String modelo = rsBuscar.getString("Modelo");
+                String matricula = rsBuscar.getString("Matricula");
+                LocalDate fechaEnt = rsBuscar.getDate("FECHA_DE_ENTRADA_EN_SERVICIO").toLocalDate();
+                listadoAviones.add(new Avion(ident,marca,modelo,matricula,fechaEnt));
             }
+
+            LOGGER.info("Hay cargados en la BD de aviones: " + listadoAviones.size() + " aviones");
 
         } catch (Exception e) {
             e.printStackTrace();
